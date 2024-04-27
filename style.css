@@ -1,0 +1,147 @@
+/* Stili globali */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Box contenitore background semitrasparenza */
+.container {
+    max-width: 62%;
+    padding: 80px 70px;
+    background-color: rgba(0, 0, 0, 0.508);
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+/* Header */
+header img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+#payoff {
+    color: #00dd00;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Menù di navigazione */
+nav {
+    background-color:#00dd00;
+    min-height: 28px;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Styling pulsanti, hover, e attivazione */
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  border: 1px solid black;
+  padding: 2px 5px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #409e40;
+  transform: translateY(2px);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+}
+
+/* Distanza tra sezioni item lista */
+.item-list section {
+    padding-top: 20px;
+}
+
+/* Styling sezioni item lista */
+.item-list h2 {
+    display: inline;
+    font-size: 20px;
+    color: white;
+}
+
+.item-list span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(226, 226, 226);
+}
+
+input[type="checkbox"] {
+    width: 12px; 
+}
+
+.item-list section span:first-of-type::before  {
+    content: "\21A6  ";
+}
+
+/* Barre stato di carica, styling generale */
+.progressBar {
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    position: static;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+/* Barre stato di carica, styling specifico per item */
+.Gino22 {
+    width: 40%;
+    background-color: #f5b453;
+    color: #f5b453;
+}
+
+.Mike24 {
+    width: 70%;
+    background-color: #1ec31e;
+    color: #1ec31e;
+}
+
+.Fede154 {
+    width: 20%;
+    background-color: #be4141;
+    color: #be4141;
+}
+
+/* Hover con rappresentazione percentuale dello stato di carica */
+.Gino22:hover, .Mike24:hover, .Fede154:hover {
+    color: white;
+}
